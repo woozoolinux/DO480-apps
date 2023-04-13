@@ -1,0 +1,18 @@
+$TTL  1D
+@     IN  SOA dns.ocp4-mng.example.com. root.example.com. (
+                2019022400 ; serial
+                3h         ; refresh
+                15         ; retry
+                1w         ; expire
+                3h         ; minimum
+              )
+         IN NS dns.ocp4-mng.example.com.
+dns      IN A 192.168.51.254
+api      IN A 192.168.51.254
+api-int  IN A 192.168.51.254
+registry IN A 192.168.51.254
+*.apps   IN A 192.168.51.254
+secbootstrap IN A 192.168.51.9 
+master201 IN A 192.168.51.10 
+master202 IN A 192.168.51.11 
+master203 IN A 192.168.51.12 
